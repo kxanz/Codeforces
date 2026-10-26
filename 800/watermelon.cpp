@@ -3,12 +3,11 @@
 
 int main() 
 {
-    std::size_t weight {8};
-    bool t { true };
-    bool f { false };
-
-    if (weight % 2 == 0) std::cout << std::boolalpha << t << "\n";
-    else std::cout << std::boolalpha << f << '\n'; 
+    std::size_t weight {};
+    std::cin >> weight;
+    
+    if (weight % 2 == 0 && weight > 2) std::cout << "YES" << "\n";
+    else std::cout << "NO "<< '\n'; 
 
     return 0;
 }
